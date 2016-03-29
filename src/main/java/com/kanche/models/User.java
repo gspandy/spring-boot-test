@@ -1,9 +1,11 @@
-package com.kanche.beans;
+package com.kanche.models;
+
+import java.io.Serializable;
 
 /**
  * Created by xialei on 16/3/28.
  */
-public class User {
+public class User implements Serializable{
 
     private String username;
     private String password;
@@ -28,5 +30,10 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
