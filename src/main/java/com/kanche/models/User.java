@@ -1,5 +1,8 @@
 package com.kanche.models;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.kanche.utils.serializer.DateJsonSerializer;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -45,6 +48,7 @@ public class User implements Serializable {
         this.createAt = createAt;
     }
 
+    @JsonSerialize(using = DateJsonSerializer.class)
     public Date getCreateAt() {
         return createAt;
     }
@@ -53,6 +57,7 @@ public class User implements Serializable {
         this.updateAt = updateAt;
     }
 
+    @JsonSerialize(using = DateJsonSerializer.class)
     public Date getUpdateAt() {
         return updateAt;
     }

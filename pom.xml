@@ -57,6 +57,11 @@
             <artifactId>mybatis-spring</artifactId>
             <version>${mybatis.spring.version}</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>joda-time</groupId>-->
+            <!--<artifactId>joda-time</artifactId>-->
+            <!--<version>2.9.3</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>
